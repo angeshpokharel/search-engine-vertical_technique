@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #9900FF;
+}
+.style1 {color: #00FF00}
+-->
+</style></head>
+<script language="javascript">
+ function validate()
+ {
+   var r1=(f1.uname.value).length;
+   var r2=(f1.pwd.value).length;
+   
+   
+   
+   if(r1=="" )
+   {
+    alert('Please ENTER THE USER NAME');
+    return false;
+   }
+
+   if(r2=="" )
+   {
+    alert('Please ENTER  PASSWORD');
+    return false;
+   }
+
+   else
+   return true;
+ }
+</script>
+
+<body>
+<img src="images/search.gif" width="100" height="100" align="left"/>
+<marquee behavior="alternate" scrollamount="3" direction="right">
+</marquee> 
+  <p>&nbsp;</p>
+  <marquee align="baseline" bgcolor="#9933FF" height="30" direction="right" hspace="30" scrollamount="3"  behavior="alternate" vspace="20 "style="border:groove"><H2 class="style5 style1">VERTICAL SEARCH WITH WEB-CRAWLER </H2>
+  </marquee>
+  <p>&nbsp;</p>
+  <form id="f1" name="f1" method="post" action="./add-category1.jsp" onsubmit="return validate()">
+    <table width="100%" border="0" bordercolor="#FF0000">
+      <tr>
+        <td width="47%" height="332"> <img    src="images/customer.jpg"  width="370" height="415" align="middle" />   </td>
+        <td width="53%">
+        
+		<table width="71%" border="0" bordercolor="#FF0000" bgcolor="#FFFFFF">
+          <tr>
+            <td width="40%" height="54"><div align="right"><strong>Registration No</strong> :* </div></td>
+            <td colspan="2"><label for="textfield"></label>
+            <input name="uname" type="text" id="textfield" size="20" /></td>
+          </tr>
+          <tr>
+            <td height="31"><div align="right"><strong>Password :*</strong></div></td>
+            <td colspan="2"><label for="label"></label>
+            <input name="pwd" type="password" id="label" size="23" /></td>
+          </tr>
+          <tr>
+            <td height="112" rowspan="2">&nbsp;</td>
+            <td width="27%" height="38"><label for="Submit"></label>
+            <input type="submit" name="Submit" value="  Log in " id="Submit" /></td>
+            <td width="33%"><label for="label2"></label>
+            <input type="reset" name="Submit2" value="  Clear  " id="label2" /></td>
+          </tr>
+          <tr>
+            <td height="49" colspan="2" bordercolor="#FF0000"><div align="center"><em><a href="./register-form.html"><strong>New Registration </strong></a></em></div></td>
+          </tr>
+        </table>
+		
+		</td>
+		
+      </tr>
+    </table>
+    <p align="left">&nbsp;</p>
+  </form>
+  <p>&nbsp;</p>
+</body>
+</html>
